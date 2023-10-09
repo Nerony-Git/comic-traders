@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+}
+
+.container .mainLeft {
+    flex-grow: 1;
+    margin-right: 30px;
+}
+
+.container .rightSidebar {
+    width: 360px;
+}
