@@ -1,8 +1,21 @@
-import Outpost from './outpost/outpost';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
+import Outpost from './outpost/outpost'
+import Checkout from './checkout/Checkout'
+import ProductDetails from './products/ProductDetails';
+import Header from './header/Header';
 
 function App() {
   return (
-    <Outpost />
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/outpost' element={<Outpost />} />
+        <Route path='/checkout' element={<Checkout />} />
+        <Route path='/product-details/:slug' element={<ProductDetails />} />
+        <Route path='/' element={<Navigate to='/outpost' />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
