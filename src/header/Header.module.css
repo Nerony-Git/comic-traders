@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .container > * {
+    margin-right: 25px;
+  }
+  
+  .container a {
+    color: #5283FF;
+  }
+  
+  .container img {
+    height: 50px;
+  }
+  
