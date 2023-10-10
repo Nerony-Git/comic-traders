@@ -14,14 +14,23 @@ function ProductDetails(){
                 <img src={require(`../images/${product.image}`)} alt="" />
                 <div className={styles.ProductDetails}>
                     <div className={styles.labels}>
-                        <div>Product:</div>
-                        <div>Description:</div>
-                        <div>Price:</div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div><strong>Product Name: </strong>  </div>
+                        <div> {product.name} </div>
+                        <br/>
+                        <div><strong>Description: </strong> </div>
+                        <div> {product.description} </div>
+                        <br/>
+                        <br/>
+                        <div><strong>Price: </strong>  </div>
+                        <div> {toCurrencyFormat(product.price)} </div>
                     </div>
                     <div>
-                        <div>{product.name}</div>
-                        <div>{product.description}</div>
-                        <div>{toCurrencyFormat(product.price)}</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
             </div>
